@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="passGen">
+        <div class="main">
+            <h2>Password Generator</h2>
+            <div class="result-container">
+                <input type="text" id="result" class="checkResult">
+                <i class="fa-solid fa-copy" class="copyIcon" id="copy"></i>
+            </div>
+            <div class="settings">
+                <div class="input-group">
+                    <h5>Character Length</h5>
+                    <span id="length-result">10</span>
+                </div>
+                <div class="input-group">
+                    <!-- <input type="range"  min='4' max='20' step="1" /> -->
+                    <input type="range" min="4" max="20" class="slider" id="length" id="myRange">
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="upperCase" checked />
+                    <label>Include Uppercase Letters</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="lowerCase" checked />
+                    <label>Include Lowercase Letters</label>
+
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="numbers" checked />
+                    <label>Include Numbers</label>
+
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="symbols" checked />
+                    <label>Include Symbols</label>
+
+                </div>
+
+                <div class="">
+                    <div class="strengthMeter">
+                        <div class="strengthText">
+                            <h3>Strength</h3>
+                        </div>
+                        <div class="strength">
+                            <div class="span1"></div>
+                            <div class="span2"></div>
+                            <div class="span3"></div>
+                            <div class="span4"></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="generate-btn" id="generate">
+                    Generate
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
